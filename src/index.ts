@@ -1,6 +1,5 @@
 import { GraphQLServer } from 'graphql-yoga'
-// import express from 'express'
-import sofa, { OpenAPI }from 'sofa-api'
+import sofa from 'sofa-api'
 import { importSchema } from 'graphql-import'
 import { makeExecutableSchema, IResolvers } from 'graphql-tools'
 import { prisma } from './generated/prisma-client'
@@ -22,7 +21,7 @@ const options = {
   port: 8000,
   endpoint: '/graphql',
   subscriptions: '/subscriptions',
-  playground: '/playground',
+  playground: '/graphql',
 }
 
 server.start(options, ({ port }) =>

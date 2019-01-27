@@ -1,5 +1,4 @@
 # Specifies the HTTP endpoint of your Prisma API.
-#endpoint: ''
 endpoint: http://localhost:14466
 
 # Defines your models, each model is mapped to the database as a table.
