@@ -1,0 +1,22 @@
+{
+  "name": "graphql-subscriptions",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/aws-lambda": "8.10.17",
+    "@types/ws": "6.0.1",
+    "graphqlgen": "^0.6.0-rc2",
+    "ts-node": "7.0.1",
+    "typescript": "3.2.4"
+  },
+  "dependencies": {
+    "graphql-import": "^0.7.1",
+    "graphql-tools": "^4.0.4",
+    "graphql-yoga": "^1.17.1",
+    "prisma-client-lib": "1.25.3",
+    "sofa-api": "^0.2.2"
+  },
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "generate": "graphqlgen"
+  }
+}
